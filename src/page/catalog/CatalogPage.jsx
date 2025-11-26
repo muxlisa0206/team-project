@@ -5,7 +5,7 @@ const CatalogPage = () => {
     <div>
       <main>
         <section>
-          <div className="container mx-auto px-3">
+          <div className="container mx-auto px-3 pt-30">
             <h1 className="text-[50px] text-[#3B3937] font-semibold sm:text-[64px]">Каталог</h1>
             <div className="flex flex-col gap-10">
               <div className="pt-8 flex flex-col items-center gap-10 sm:grid grid-cols-2 lg:flex lg:flex-row">
