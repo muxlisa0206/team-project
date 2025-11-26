@@ -54,7 +54,7 @@ const CatalogPage = () => {
                 <div className="max-w-[590px] w-full h-[300px]">
                   <div className="bg-[url('/fasad.jpg')] bg-cover">
                     <div className="pt-10 pl-8">
-                      <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Лестницы</h2>
+                      <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Лестници</h2>
                       <div className="pt-42 pb-8">
                         <h2 className="text-[15px] text-[#3B3937] flex items-center justify-center bg-[white] w-9 h-9 rounded-[150px]"><FaArrowRightLong /></h2>
                       </div>
