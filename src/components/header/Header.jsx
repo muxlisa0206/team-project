@@ -6,7 +6,7 @@ import CatalogPage from '../../page/catalog/CatalogPage';
 
 function Header() {
   return (
-    <header className='bg-[#3B3937]'>
+    <header className='bg-[#3B3937] fixed z-10 w-full top-0'>
       <div className='container mx-auto px-[30px] py-[25px] flex items-center justify-between'>
         <NavLink to="/"><img src={logo} alt="" /></NavLink>
         <ul className='flex items-center gap-[30px]'>
