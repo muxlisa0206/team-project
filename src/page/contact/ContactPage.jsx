@@ -8,7 +8,7 @@ const ContactPage = () => {
           <div className="container mx-auto">
             <ul className='flex  gap-5'>
               <li>
-                <a className='text-[#B1B0AF] text-[12px] ' href="">Главная</a>
+                <a className='text-[#B1B0AF] text-[12px] ' href="/">Главная</a>
               </li>
 
               <li>
