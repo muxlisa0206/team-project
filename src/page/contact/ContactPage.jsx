@@ -136,7 +136,7 @@ const ContactPage = () => {
                 />
               </div>
 
-              <button className='bg-[#A9845C] p-4 rounded-[5px] mt-[40px] text-white'>
+              <button className='bg-[#A9845C] p-4 rounded-[5px] mt-[40px] text-white cursor-pointer'>
                 отправить сообщение
               </button>
             </div>
