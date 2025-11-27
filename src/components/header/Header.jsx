@@ -2,11 +2,10 @@ import React from 'react'
 
 import logo from '../../assets/logo.png';
 import { NavLink } from 'react-router-dom';
-import CatalogPage from '../../page/catalog/CatalogPage';
 
 function Header() {
   return (
-    <header className='bg-[#3B3937]'>
+    <header className='bg-[#3B3937] fixed z-10 w-full top-0'>
       <div className='container mx-auto px-[30px] py-[25px] flex items-center justify-between'>
         <NavLink to="/"><img src={logo} alt="" /></NavLink>
         <ul className='flex items-center gap-[30px]'>
@@ -15,6 +14,9 @@ function Header() {
             </li>
             <li>
               <NavLink className='text-white text-[16px] font-[400]' to="State">State</NavLink>
+            </li>
+            <li>
+              <NavLink className='text-white text-[16px] font-[400]' to="Dastavka"><Dastavka></Dastavka></NavLink>
             </li>
         </ul>
         <p className='text-[#FFD6A8] text-[16px] font-[400px]'>

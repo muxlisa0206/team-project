@@ -47,6 +47,8 @@ function Footer() {
               <div className='flex flex-col gap-[13px]'>
                 <NavLink className="text-white text-[13px] font-[400]" to="Contact">Contact</NavLink>
                 <NavLink className="text-white text-[13px] font-[400]" to="State">State</NavLink>
+                <NavLink className="text-white text-[13px] font-[400]" to="Dastavka">Dastavka</NavLink>
+
               </div>
               <div className='flex items-center'>
                 <div className='w-[50px] h-[50px] rounded-[50%] border-[#505050] border-1 bg-[#3B3937] flex items-center justify-center'><img src={vk} alt="" /></div>
