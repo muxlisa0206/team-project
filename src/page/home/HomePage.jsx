@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 // import required modules
 import { Zoom, Navigation, Pagination } from 'swiper/modules';
 
-import herobg from '../../assets/herobg.jpg';
+import herobg from '../../herobg.jpg';
 import footerbg from '../../assets/footerbg.png';
 
 const HomePage = () => {
