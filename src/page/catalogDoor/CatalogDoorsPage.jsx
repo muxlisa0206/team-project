@@ -76,7 +76,7 @@ function CatalogDoorsPage() {
   return (
     <>
 
-      <section className='py-[50px]'>
+      <section className='py-[50px] px-[20px]'>
         <div className='container mx-auto'>
           <ul className='flex items-center gap-5 py-4 text-[12px] text-[#B1B0AF]'>
             <li>
@@ -93,7 +93,7 @@ function CatalogDoorsPage() {
           <h1 className='text-[64px] text-[#3B3937] font-bold'>Межкомнатные двери</h1>
 
           <div className='pt-[60px] flex gap-[70px] items-start'>
-            <div className='max-w-[250px] w-full flex flex-col gap-10'>
+            <div className='max-w-[300px] w-full hidden lg:flex flex-col gap-10'>
               <ul>
                 <li className='font-bold text-[15px] text-[#B14101] pb-[5px]'>Межкомнатные двери</li>
                 <li className='font-bold text-[15px] text-[#3B3937]'>Мебель</li>
@@ -431,7 +431,7 @@ function CatalogDoorsPage() {
               </div>
             </div>
             <div>
-              <div className='grid grid-cols-3 gap-[30px] pb-[70px]'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[30px] pb-[70px]'>
                 {
                   doorInfo.map((el) => (
                     <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
@@ -460,9 +460,9 @@ function CatalogDoorsPage() {
 
       <section className='py-[60px]'>
         <div className='container mx-auto flex items-center justify-center'>
-          <div className='flex w-full full'>
-            <div className='max-w-[700px] w-full'>
-              <img className='w-full h-full' src="/interriorDoorsPhotos/Rectangle 1716.png" alt="" />
+          <div className='md:flex w-full'>
+            <div className='max-w-[700px] w-full h-full'>
+              <img className='w-full object-cover h-[800px]' src="/interriorDoorsPhotos/Rectangle 1716.png" alt="" />
             </div>
             <div className='bg-[#F3F0EE] w-full p-20 flex flex-col gap-[50px]'>
               <h1 className='text-[64px] text-[#3B3937] font-bold leading-20'>Нужна помощь с выбором?</h1>
