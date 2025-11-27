@@ -16,7 +16,7 @@ function Header() {
               <NavLink className='text-white text-[16px] font-normal' to="State">State</NavLink>
             </li>
             <li>
-              <NavLink className='text-white text-[16px] font-normal' to="Dastavka"><Dastavka></Dastavka></NavLink>
+              <NavLink className='text-white text-[16px] font-normal' to="Dastavka">Dastavka</NavLink>
             </li>
         </ul>
         <p className='text-[#FFD6A8] text-[16px] font-[400px]'>
