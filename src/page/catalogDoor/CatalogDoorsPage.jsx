@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import PaginationPhotos from './components/catalogDoors/CatalogInterriorDoors';
 import CatalogInterriorDoors from './components/catalogDoors/CatalogInterriorDoors';
 
 const doorInfo = [
@@ -166,7 +165,7 @@ function CatalogDoorsPage() {
                   <button
                     onClick={() => setIsStyleOpen((prev) => !prev)}
                     type="button"
-                    className="flex items-center justify-between w-full font-medium rtl:text-right text-body rounded-base shadow-xs hover:text-heading hover:bg-neutral-secondary-medium gap-3 [&[aria-expanded='true']]:rounded-b-none [&[aria-expanded='true']]:shadow-none"
+                    className="flex items-center justify-between w-full font-medium rtl:text-right text-body rounded-base shadow-xs hover:text-heading hover:bg-neutral-secondary-medium gap-3 aria-expanded:rounded-b-none aria-expanded:shadow-none"
                     aria-expanded={isStyleOpen}
                     aria-controls="accordion-card-body-2">
                     <span>Стиль</span>
@@ -212,7 +211,7 @@ function CatalogDoorsPage() {
                   <button
                     onClick={() => setIsStyleOpen((prev) => !prev)}
                     type="button"
-                    className="flex items-center justify-between w-full font-medium rtl:text-right text-body rounded-base shadow-xs hover:text-heading hover:bg-neutral-secondary-medium gap-3 [&[aria-expanded='true']]:rounded-b-none [&[aria-expanded='true']]:shadow-none"
+                    className="flex items-center justify-between w-full font-medium rtl:text-right text-body rounded-base shadow-xs hover:text-heading hover:bg-neutral-secondary-medium gap-3 aria-expanded:rounded-b-none aria-expanded:shadow-none"
                     aria-expanded={isStyleOpen}
                     aria-controls="accordion-card-body-3">
                     <span className='font-bold'>Материал</span>
@@ -266,7 +265,7 @@ function CatalogDoorsPage() {
                   <button
                     onClick={() => setIsStyleOpen((prev) => !prev)}
                     type="button"
-                    className="flex items-center justify-between w-full font-medium rtl:text-right text-body rounded-base shadow-xs hover:text-heading hover:bg-neutral-secondary-medium gap-3 [&[aria-expanded='true']]:rounded-b-none [&[aria-expanded='true']]:shadow-none"
+                    className="flex items-center justify-between w-full font-medium rtl:text-right text-body rounded-base shadow-xs hover:text-heading hover:bg-neutral-secondary-medium gap-3 aria-expanded:rounded-b-none aria-expanded:shadow-none"
                     aria-expanded={isStyleOpen}
                     aria-controls="accordion-card-body-4">
                     <span className='font-bold'>Покрытие</span>
@@ -312,7 +311,7 @@ function CatalogDoorsPage() {
                   <button
                     onClick={() => setIsStyleOpen((prev) => !prev)}
                     type="button"
-                    className="flex items-center justify-between w-full font-medium rtl:text-right text-body rounded-base shadow-xs hover:text-heading hover:bg-neutral-secondary-medium gap-3 [&[aria-expanded='true']]:rounded-b-none [&[aria-expanded='true']]:shadow-none"
+                    className="flex items-center justify-between w-full font-medium rtl:text-right text-body rounded-base shadow-xs hover:text-heading hover:bg-neutral-secondary-medium gap-3 aria-expanded:rounded-b-none aria-expanded:shadow-none"
                     aria-expanded={isStyleOpen}
                     aria-controls="accordion-card-body-5">
                     <span className='font-bold'>Тип конструкции</span>
@@ -382,7 +381,7 @@ function CatalogDoorsPage() {
                   <button
                     onClick={() => setIsStyleOpen((prev) => !prev)}
                     type="button"
-                    className="flex items-center justify-between w-full font-medium rtl:text-right text-body rounded-base shadow-xs hover:text-heading hover:bg-neutral-secondary-medium gap-3 [&[aria-expanded='true']]:rounded-b-none [&[aria-expanded='true']]:shadow-none"
+                    className="flex items-center justify-between w-full font-medium rtl:text-right text-body rounded-base shadow-xs hover:text-heading hover:bg-neutral-secondary-medium gap-3 aria-expanded:rounded-b-none aria-expanded:shadow-none"
                     aria-expanded={isStyleOpen}
                     aria-controls="accordion-card-body-6">
                     <span className='font-bold'>Облицовки</span>

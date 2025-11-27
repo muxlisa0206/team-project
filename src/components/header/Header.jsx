@@ -10,20 +10,20 @@ function Header() {
         <NavLink to="/"><img src={logo} alt="" /></NavLink>
         <ul className='flex items-center gap-[30px]'>
             <li>
-              <NavLink className='text-white text-[16px] font-[400]' to="Contact">Contact</NavLink>
+              <NavLink className='text-white text-[16px] font-normal' to="Contact">Contact</NavLink>
             </li>
             <li>
-              <NavLink className='text-white text-[16px] font-[400]' to="State">State</NavLink>
+              <NavLink className='text-white text-[16px] font-normal' to="State">State</NavLink>
             </li>
             <li>
-              <NavLink className='text-white text-[16px] font-[400]' to="Dastavka"><Dastavka></Dastavka></NavLink>
+              <NavLink className='text-white text-[16px] font-normal' to="Dastavka"><Dastavka></Dastavka></NavLink>
             </li>
         </ul>
         <p className='text-[#FFD6A8] text-[16px] font-[400px]'>
             support@sofiadoors.com
           </p>
           <p className='text-[#FFD6A8] text-[20px] font-bold'>8 (800) 550-81-79</p>
-        <NavLink to="Catalog" className='bg-[#FFD6A8] text-white text-[13px] font-[700] shadow-[1px_1px_1px_0px_#00000040] border-1 border-white px-[35px] cursor-pointer py-[15px]'>Catalog</NavLink>
+        <NavLink to="Catalog" className='bg-[#FFD6A8] text-white text-[13px] font-bold shadow-[1px_1px_1px_0px_#00000040] border border-white px-[35px] cursor-pointer py-[15px]'>Catalog</NavLink>
       </div>
     </header>
   )
