@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const DastavkaPage = () => {
   return (
@@ -6,7 +7,14 @@ const DastavkaPage = () => {
       <main>
         <section className='px-2 xl:px-0'>
           <div className="container mx-auto">
-            <h1 className="pt-35 text-[40px] text-[#3B3937] font-semibold sm:text-[50px] md:text-[56px] lg:text-[64px]">Доставка и оплата</h1>
+            <div className='pt-35 flex gap-5'>
+              <Link className='text-[13px] sm:text-[15px] text-[#B1B0AF]' to="/">Главная</Link>
+              <p className='text-[15px] text-[#B1B0AF]'>-</p>
+              <Link className='text-[13px] sm:text-[15px] text-[#B1B0AF]' to="/catalog">Каталог</Link>
+              <p className='text-[15px] text-[#B1B0AF]'>-</p>
+              <Link className='text-[13px] sm:text-[15px] text-[#B1B0AF]' to="/">Доставка и оплата</Link>
+            </div>
+            <h1 className="text-[40px] text-[#3B3937] font-semibold sm:text-[50px] md:text-[56px] lg:text-[64px]">Доставка и оплата</h1>
             <div className='pt-9'>
               <img className='sm:max-w-[820px] w-full h-[450px]' src="./man.jpg" alt="" />
             </div>
