@@ -10,7 +10,6 @@ import 'swiper/css/pagination';
 // import required modules
 import { Zoom, Navigation, Pagination } from 'swiper/modules';
 
-import herobg from '../../herobg.jpg';
 import footerbg from '../../assets/footerbg.png';
 
 const HomePage = () => {
@@ -19,7 +18,7 @@ const HomePage = () => {
       <main>
         <section  className='h-[100vh] m-[20px] mt-[130px]'
         style={{
-          backgroundImage: `url(${herobg})`,
+          backgroundImage: `url(/herobg.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}>
