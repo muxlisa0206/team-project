@@ -16,12 +16,8 @@ const HomePage = () => {
   return (
     <div>
       <main>
-        <section  className='h-[100vh] m-[20px] mt-[130px]'
-        style={{
-          backgroundImage: `url(/herobg.jpg)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}>
+        <section  className='h-[100vh] m-[20px] mt-[130px] bg-[url(herobg.jpg)]'
+       >
          <Swiper
             style={{
               '--swiper-navigation-color': '#fff',

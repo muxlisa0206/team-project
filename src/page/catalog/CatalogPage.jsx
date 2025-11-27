@@ -17,14 +17,14 @@ const CatalogPage = () => {
       <main>
         <section>
           <div className="container mx-auto px-3 pl-10 pr-7">
-            <div className='pt-35 flex gap-5'>
+            <div className='pt-55 lg:pt-35 flex gap-5'>
               <Link className='text-[13px] sm:text-[15px] text-[#B1B0AF]' to="/">Главная</Link>
               <p className='text-[15px] text-[#B1B0AF]'>-</p>
               <Link className='text-[13px] sm:text-[15px] text-[#B1B0AF]' to="/catalog">Каталог</Link>
             </div>
             <div className="flex items-center justify-between">
               <h1 className="text-[50px] text-[#3B3937] dark:text-white font-semibold sm:text-[64px]">Каталог</h1>
-              <div className="pt-10">
+              <div className="pt-5 lg:pt-10">
                 <button onClick={changeMode}>
                   {
                     dark ? <FaSun className='text-yellow-400 text-[24px]' /> : <FaMoon className='text-[24px]' />
