@@ -47,7 +47,7 @@ const CatalogPage = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-10 pb-22 md:flex md:flex-row">
-                <div className="max-w-[650px] w-full h-[300px]">
+                <div className="max-w-[695px] w-full h-[300px]">
                   <div className="bg-[url('/zina.png')] bg-cover">
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Лестницы</h2>
@@ -57,7 +57,7 @@ const CatalogPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-[650px] w-full h-[300px]">
+                <div className="max-w-[695px] w-full h-[300px]">
                   <div className="bg-[url('/fasad.jpg')] bg-cover">
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Лестници</h2>
