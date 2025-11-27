@@ -431,7 +431,7 @@ function CatalogDoorsPage() {
               </div>
             </div>
             <div>
-              <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px] pb-[70px]'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[30px] pb-[70px]'>
                 {
                   doorInfo.map((el) => (
                     <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
