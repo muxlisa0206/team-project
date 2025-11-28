@@ -71,7 +71,7 @@ const CatalogPage = () => {
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Лестницы</h2>
                       <div className="pt-42 pb-8">
-                        <Link to="" className="text-[15px] text-[#3B3937] flex items-center justify-center bg-[white] w-9 h-9 rounded-[150px] hover:shadow-[0_8px_24px_silver] hover:transform hover:translate-y-[-2px] duration-200"><FaArrowRightLong /></Link>
+                        <Link to="/catalog/:id" className="text-[15px] text-[#3B3937] flex items-center justify-center bg-[white] w-9 h-9 rounded-[150px] hover:shadow-[0_8px_24px_silver] hover:transform hover:translate-y-[-2px] duration-200"><FaArrowRightLong /></Link>
                       </div>
                     </div>
                   </div>
@@ -81,7 +81,7 @@ const CatalogPage = () => {
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Лестници</h2>
                       <div className="pt-42 pb-8">
-                        <h2 className="text-[15px] text-[#3B3937] flex items-center justify-center bg-[white] w-9 h-9 rounded-[150px] hover:shadow-[0_8px_24px_silver] hover:transform hover:translate-y-[-2px] duration-200"><FaArrowRightLong /></h2>
+                        <Link to="/catalog/:id" className="text-[15px] text-[#3B3937] flex items-center justify-center bg-[white] w-9 h-9 rounded-[150px] hover:shadow-[0_8px_24px_silver] hover:transform hover:translate-y-[-2px] duration-200"><FaArrowRightLong  /></Link>
                       </div>
                     </div>
                   </div>
