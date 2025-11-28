@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import CatalogInterriorDoors from './components/catalogDoors/CatalogInterriorDoors';
+import CatalogInterriorDoors from '../../components/catalogDoors/CatalogInterriorDoors';
+import NeedAHelp from '../../components/needAHelp/NeedAHelp';
 
 const doorInfo = [
   {
@@ -64,7 +65,7 @@ const doorInfo = [
     photos: "/interriorDoorsPhotos/door 9.png",
     model: "METAMORFOSA Модель 65.171",
     price: "24500",
-    discount: "",
+    discount: "0",
   },
 
 ]
@@ -92,7 +93,15 @@ function CatalogDoorsPage() {
 
           <h1 className='text-[64px] text-[#3B3937] font-bold'>Межкомнатные двери</h1>
 
-          <div className='pt-[60px] flex gap-[70px] items-start'>
+          <div className='pt-[60px] lg:flex gap-[70px] items-start'>
+            <div className='lg:hidden flex w-full pb-[30px]'>
+              <div className='flex w-full items-center p-5 border border-[#DADADA]'>
+                <h2 className='text-[20px] whitespace-nowrap  font-bold text-[#3B3937]'>Межкомнатные двери</h2>
+                </div>
+              <div className='p-5 border border-[#DADADA] flex items-center'>
+                <img src="/interriorDoorsPhotos/Vector (3).svg" alt="" />
+              </div>
+            </div>
             <div className='max-w-[300px] w-full hidden lg:flex flex-col gap-10'>
               <ul>
                 <li className='font-bold text-[15px] text-[#B14101] pb-[5px]'>Межкомнатные двери</li>
@@ -458,30 +467,7 @@ function CatalogDoorsPage() {
         </div>
       </section >
 
-      <section className='py-[60px]'>
-        <div className='container mx-auto flex items-center justify-center'>
-          <div className='md:flex w-full'>
-            <div className='max-w-[700px] w-full h-full'>
-              <img className='w-full object-cover h-[800px]' src="/interriorDoorsPhotos/Rectangle 1716.png" alt="" />
-            </div>
-            <div className='bg-[#F3F0EE] w-full p-20 flex flex-col gap-[50px]'>
-              <h1 className='text-[64px] text-[#3B3937] font-bold leading-20'>Нужна помощь с выбором?</h1>
-              <p className='text-[22px] text-[#3B3937]'>Наши специалисты с радостью помогут Вам, оставьте свой номер телефона!</p>
-              <form className='flex flex-col gap-[25px]' action="">
-                <div className='flex gap-5 '>
-                  <div className='w-full'>
-                    <input required className='max-w-80 w-full h-[60px] pl-5 bg-[white]' placeholder='Как вас зовут?' type="text" />
-                  </div>
-                  <div className='w-full'>
-                    <input required className='max-w-80 w-full h-[60px] pl-5 bg-[white]' placeholder='Ваш телефон' type="tel" />
-                  </div>
-                </div>
-                <span><button className='py-5 px-35 bg-[#A9845C] font-bold text-[white] cursor-pointer'>Связаться с нами</button></span>
-              </form>
-            </div>
-          </div>
-          </div>
-      </section>
+      <NeedAHelp/>
 
     </>
   )
