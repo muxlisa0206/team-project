@@ -94,7 +94,7 @@ const HomePage = () => {
   return (
     <div>
       <main>
-        <section  className='h-[100vh] m-[20px] mt-[130px] bg-[url(herobg.jpg)]'
+        <section  className='h-[100vh] m-[20px] mt-[130px] bg-[url(./herobg.png)]'
        >
          <Swiper
         effect={'flip'}
