@@ -18,7 +18,7 @@ import 'react-tabs/style/react-tabs.css';
 import './homePage.css'
 
 import footerbg from '../../assets/footerbg.png';
-import image1 from '../../assets/image1.jpg';
+import image1 from '../../assets/image1.png';
 import image2 from '../../assets/image2.png';
 import CatalogInterriorDoors from '../../components/catalogDoors/CatalogInterriorDoors';
 import NeedAHelp from '../../components/needAHelp/NeedAHelp';
