@@ -18,16 +18,16 @@ function SinglePage() {
             </div>
             <div className='flex items-center justify-between gap-2 pt-3'>
               <div className='w-full cursor-pointer'>
-                <img className='w-full h-[90px]' src="../Public/single/1_2.png" alt="" />
+                <img className='w-full h-[90px]' src="/single/1_2.png" alt="" />
               </div>
               <div className='w-full cursor-pointer'>
-                <img className='w-full h-[90px]' src="../Public/single/1_4.png" alt="" />
+                <img className='w-full h-[90px]' src="/single/1_4.png" alt="" />
               </div>
               <div className='w-full cursor-pointer'>
-                <img className='w-full h-[90px]' src="../Public/single/1_4.png" alt="" />
+                <img className='w-full h-[90px]' src="/single/1_4.png" alt="" />
               </div>
               <div className='w-full cursor-pointer'>
-                <img className='w-full h-[90px]' src="../Public/single/1_5.png" alt="" />
+                <img className='w-full h-[90px]' src="/single/1_5.png" alt="" />
               </div>
             </div>
           </div>
