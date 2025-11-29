@@ -8,8 +8,9 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
-export default function CatalogInterriorDoors({ model, price, photos }) {
+export default function CatalogInterriorDoors({ id, model, price, photos }) {
     return (
         <>
             <div className='p-5 border border-[#DADADA]'>
@@ -25,7 +26,7 @@ export default function CatalogInterriorDoors({ model, price, photos }) {
 
                 </Swiper>
 
-                <h4 className='text-right font-bold text-[#B14101]'>КУПИТЬ</h4>
+                <Link to={`/CatalogDoors/${id}`} className='flex p-2 justify-end font-bold text-[#B14101]'>КУПИТЬ</Link>
 
             </div>
         </>

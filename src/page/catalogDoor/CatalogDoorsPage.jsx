@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import CatalogInterriorDoors from '../../components/catalogDoors/CatalogInterriorDoors';
 import NeedAHelp from '../../components/needAHelp/NeedAHelp';
-import DoorFilter from './components/doorFilter/DoorFilter';
 import { ImCancelCircle } from "react-icons/im";
 
 const doorInfo = [
@@ -82,7 +81,7 @@ function CatalogDoorsPage() {
   return (
     <>
 
-      <section className='py-[50px] px-5'>
+      <section className='py-[50px] pt-[150px] px-5'>
         <div className='container mx-auto'>
           <ul className='flex items-center gap-5 py-4 text-[12px] text-[#B1B0AF]'>
             <li>
@@ -90,7 +89,7 @@ function CatalogDoorsPage() {
             </li>
             <li className='text-[20px]'>-</li>
             <li>
-              <Link to={"Catalog"}>Каталог</Link>
+              <Link to={"/catalog"}>Каталог</Link>
             </li>
             <li className='text-[20px]'>-</li>
             <li>Межкомнатные двери</li>
@@ -117,34 +116,35 @@ function CatalogDoorsPage() {
             </div>
             <div className={`px-[30px] h-screen ${filter ? "translate-y-0" : "-translate-full"} duration-300 pt-[200px] top-0 left-0 w-full lg:hidden flex flex-col gap-5 fixed bg-[white] z-5`}>
 
-              <div className='flex items-center gap-[30px]'>
+              <div className='flex w-full items-center gap-[30px]'>
                 <button onClick={openFilter}><ImCancelCircle className='w-10 h-10'/></button>
                 <h2 className='text-[24px]'>Фильтровать</h2>
               </div>
 
-              <ul className='flex flex-col gap-2.5'>
+              <ul className='flex w-full flex-col gap-2.5'>
                 <div className='flex items-center justify-between'>
                   <li className='font-bold '>Ценовой диапазон</li>
                   <div className='flex items-center justify-end cursor-pointer' onClick={() => setFilter(false)}></div>
                 </div>
 
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center w-full gap-2'>
                   <div className='flex flex-col'>
                     <label className='text-[13px]' htmlFor="">Выбрано</label>
-                    <input className="max-w-[120px] w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
+                    <input className=" w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
                   </div>
                   <div className='flex flex-col'>
                     <label className='text-right text-[13px]' htmlFor="">очистить</label>
-                    <input className="max-w-[120px] w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
+                    <input className=" w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
                   </div>
                 </div>
-                <div className='bg-[#F3F0EE] flex justify-center'>
-                  <input className='p-[11px] bg-[black] max-w-[226px] w-full ' type="range" />
+                <div className='bg-[#F3F0EE] max-w-[406px] flex justify-center'>
+                  <input className='p-[11px] bg-[black]  w-full ' type="range" />
+                  
                 </div>
               </ul>
               <hr />
               <ul>
-                <li className='font-bold '>Ценовой диапазон</li>
+                <li className='font-bold '>Тип дверей</li>
 
                 <div
                   id="accordion-card-body-1"
@@ -168,7 +168,7 @@ function CatalogDoorsPage() {
               </ul>
               <hr />
               <ul>
-                <li className='font-bold '>Ценовой диапазон</li>
+                <li className='font-bold '>Стиль</li>
 
                 <div
                   id="accordion-card-body-2"
@@ -197,7 +197,7 @@ function CatalogDoorsPage() {
               </ul>
               <hr />
               <ul>
-                <li className='font-bold '>Ценовой диапазон</li>
+                <li className='font-bold '>Материал</li>
 
                 <div
                   id="accordion-card-body-3"
@@ -236,7 +236,7 @@ function CatalogDoorsPage() {
               </ul>
               <hr />
               <ul>
-                <li className='font-bold '>Ценовой диапазон</li>
+                <li className='font-bold '>Покрытие</li>
 
                 <div
                   id="accordion-card-body-4"
@@ -265,7 +265,7 @@ function CatalogDoorsPage() {
               </ul>
               <hr />
               <ul>
-                <li className='font-bold '>Ценовой диапазон</li>
+                <li className='font-bold '>Тип конструкции</li>
 
                 <div
                   id="accordion-card-body-5"
@@ -324,7 +324,7 @@ function CatalogDoorsPage() {
               </ul>
               <hr />
               <ul>
-                <li className='font-bold '>Ценовой диапазон</li>
+                <li className='font-bold '>Облицовки</li>
 
                 <div
                   id="accordion-card-body-6"
@@ -376,11 +376,11 @@ function CatalogDoorsPage() {
                 <div className='flex items-center gap-2'>
                   <div className='flex flex-col'>
                     <label className='text-[13px]' htmlFor="">Выбрано</label>
-                    <input className="max-w-[120px] w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
+                    <input className=" w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
                   </div>
                   <div className='flex flex-col'>
                     <label className='text-right text-[13px]' htmlFor="">очистить</label>
-                    <input className="max-w-[120px] w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
+                    <input className=" w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
                   </div>
                 </div>
                 <div className='bg-[#F3F0EE] flex justify-center'>
@@ -704,7 +704,7 @@ function CatalogDoorsPage() {
               <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[30px] pb-[70px]'>
                 {
                   doorInfo.map((el) => (
-                    <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                    <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
                   ))
                 }
 
