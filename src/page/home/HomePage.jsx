@@ -18,6 +18,7 @@ import 'react-tabs/style/react-tabs.css';
 import './homePage.css'
 
 import footerbg from '../../assets/footerbg.png';
+import herobg from '../../assets/herobg.png'
 import image1 from '../../assets/image1.png';
 import image2 from '../../assets/image2.png';
 import CatalogInterriorDoors from '../../components/catalogDoors/CatalogInterriorDoors';
@@ -94,7 +95,12 @@ const HomePage = () => {
   return (
     <div>
       <main>
-        <section  className='h-[100vh] m-[20px] mt-[130px] bg-[url(./herobg.png)]'
+        <section  className='h-[100vh] m-[20px] mt-[130px]'
+        style={{
+              backgroundImage: `url(${herobg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
        >
          <Swiper
         effect={'flip'}
