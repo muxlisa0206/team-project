@@ -33,7 +33,7 @@ const DastavkaPage = () => {
               </div>
             </div>
             <div className='pt-9'>
-              <img className='shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden sm:max-w-[820px] w-full h-[450px]' src="./man.jpg" alt="" />
+              <img className='shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden sm:max-w-[820px] w-full h-[450px]' src="./odam.png" alt="" />
             </div>
             <div className='pl-5'>
               <p className='text-[20px] text-[#3B3937] dark:text-[silver] pt-13'>Срок пошива комплекта –  10-15 рабочих дней. Доставка от 2-х дней, в зависимости от <br /> региона. Мы работаем с Boxberry, СDEK и Почтой России. Стоимость доставки зависит <br /> от региона и рассчитывается индивидуально.</p>
