@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/effect-flip';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 // import required modules
@@ -101,6 +101,7 @@ const HomePage = () => {
         grabCursor={true}
         pagination={true}
         navigation={true}
+        loop={true}
         modules={[EffectFlip, Pagination, Navigation]}
         className="mySwiper"
       >
