@@ -9,24 +9,24 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination } from 'swiper/modules';
 
-export default function CatalogInterriorDoors(door) {
+export default function CatalogInterriorDoors({ model, price, photos }) {
     return (
         <>
             <div className='p-5 border border-[#DADADA]'>
-                <h3 className='text-[18px]'>{door.model}</h3>
-                <p className='text-[18px] font-bold'>{door.price}</p>
-                
-                    <Swiper pagination={true} modules={[Pagination]} className="mySwiper h-72 flex justify-center">
+                <h3 className='text-[18px]'>{model}</h3>
+                <p className='text-[18px] font-bold'>{price}</p>
 
-                        <SwiperSlide><div className='flex justify-center'><img src={door.photos} alt="" /></div></SwiperSlide>
-                        <SwiperSlide><div className='flex justify-center'><img src={door.photos} alt="" /></div></SwiperSlide>
-                        <SwiperSlide><div className='flex justify-center'><img src={door.photos} alt="" /></div></SwiperSlide>
-                        <SwiperSlide><div className='flex justify-center'><img src={door.photos} alt="" /></div></SwiperSlide>
+                <Swiper pagination={true} modules={[Pagination]} className="mySwiper h-72 flex justify-center">
 
-                    </Swiper>
+                    <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
+                    <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
+                    <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
+                    <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
+
+                </Swiper>
 
                 <h4 className='text-right font-bold text-[#B14101]'>КУПИТЬ</h4>
-                
+
             </div>
         </>
     );
