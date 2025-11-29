@@ -4,7 +4,7 @@ function NeedAHelp() {
   return (
     <>
           <section className='py-[60px]'>
-              <div className='container mx-auto px-[30px] flex items-center justify-center'>
+              <div className='container mx-auto flex items-center justify-center'>
                   <div className='md:flex w-full'>
                       <div className='max-w-[700px] w-full h-full'>
                           <img className='w-full object-cover h-[800px]' src="/interriorDoorsPhotos/Rectangle 1716.png" alt="" />
@@ -21,7 +21,7 @@ function NeedAHelp() {
                                       <input required className='max-w-80 w-full h-[60px] pl-5 bg-[white]' placeholder='Ваш телефон' type="tel" />
                                   </div>
                               </div>
-                              <span><button className='py-5 px-35 bg-[#A9845C] font-bold text-[white] whitespace-nowrap cursor-pointer'>Связаться с нами</button></span>
+                              <span><button className='py-5 px-24 sm:px-35 bg-[#A9845C] font-bold text-[white] whitespace-nowrap cursor-pointer'>Связаться с нами</button></span>
                           </form>
                       </div>
                   </div>

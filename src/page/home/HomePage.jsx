@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -193,7 +193,7 @@ const HomePage = () => {
                   <div className='grid grid-cols-3 gap-[30px] py-[20px]'>
                     {
                         doorInfo.map((el) => (
-                        <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                        <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
                         ))
                     }
                   </div>
@@ -202,7 +202,7 @@ const HomePage = () => {
                   <div className='grid grid-cols-3 gap-[30px] py-[20px]'>
                     {
                   doorInfo.map((el) => (
-                    <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                    <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
                   ))
                 }
                   </div>
@@ -211,7 +211,7 @@ const HomePage = () => {
                   <div className='grid grid-cols-3 gap-[30px] py-[20px]'>
                     {
                   doorInfo.map((el) => (
-                    <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                    <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
                   ))
                 }
                   </div>
@@ -220,7 +220,7 @@ const HomePage = () => {
                   <div className='grid grid-cols-3 gap-[30px] py-[20px]'>
                     {
                   doorInfo.map((el) => (
-                    <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                    <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
                   ))
                 }
                   </div>
@@ -229,7 +229,7 @@ const HomePage = () => {
                   <div className='grid grid-cols-3 gap-[30px] py-[20px]'>
                     {
                   doorInfo.map((el) => (
-                    <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                    <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
                   ))
                 }
                   </div>
