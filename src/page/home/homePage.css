@@ -21,3 +21,18 @@
     width: 40px !important;
     height: 40px !important;
 } */
+
+.react-tabs__tab-list{
+    margin: 10px 0;
+}
+
+.react-tabs__tab{
+    border: 1px solid #DADADA;
+}
+
+.react-tabs__tab--selected{
+    border: 2px solid #3B3937;
+    color: #3B3937;
+    font-weight: bold;
+    border-radius: 0;
+}
