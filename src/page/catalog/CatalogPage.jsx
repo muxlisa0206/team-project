@@ -34,7 +34,7 @@ const CatalogPage = () => {
             </div>
             <div className="flex flex-col gap-10">
               <div className="pt-8 flex flex-col items-center gap-10 sm:grid grid-cols-2 lg:flex lg:flex-row">
-                <div className="max-w-[450px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden">
+                <div className="max-w-[450px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden xl:max-w-[460px] w-full h-[300px]">
                   <div className="bg-[url('/eshik.jpg')] bg-cover">
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Межкомнатные <br /> дверы</h2>
@@ -44,7 +44,7 @@ const CatalogPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-[450px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden">
+                <div className="max-w-[450px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden xl:max-w-[460px] w-full h-[300px]">
                   <div className="bg-[url('/mebel.png')] bg-cover">
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Мебель</h2>
@@ -54,7 +54,7 @@ const CatalogPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-[450px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden">
+                <div className="max-w-[450px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden xl:max-w-[460px] w-full h-[300px]">
                   <div className="bg-[url('/krovat.png')] bg-cover">
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Стеновые панели <br /> «Буазери»</h2>
@@ -66,22 +66,22 @@ const CatalogPage = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-10 pb-22 md:flex md:flex-row">
-                <div className="max-w-[695px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden">
+                <div className="max-w-[695px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden xl:max-w-[710px] w-full h-[300px]">
                   <div className="bg-[url('/zina.png')] bg-cover">
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Лестницы</h2>
                       <div className="pt-42 pb-8">
-                        <Link to="" className="text-[15px] text-[#3B3937] flex items-center justify-center bg-[white] w-9 h-9 rounded-[150px] hover:shadow-[0_8px_24px_silver] hover:transform hover:translate-y-[-2px] duration-200"><FaArrowRightLong /></Link>
+                        <Link to="/catalog/:id" className="text-[15px] text-[#3B3937] flex items-center justify-center bg-[white] w-9 h-9 rounded-[150px] hover:shadow-[0_8px_24px_silver] hover:transform hover:translate-y-[-2px] duration-200"><FaArrowRightLong /></Link>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="max-w-[695px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden">
+                <div className="max-w-[695px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden xl:max-w-[710px] w-full h-[300px]">
                   <div className="bg-[url('/fasad.jpg')] bg-cover">
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Лестници</h2>
                       <div className="pt-42 pb-8">
-                        <h2 className="text-[15px] text-[#3B3937] flex items-center justify-center bg-[white] w-9 h-9 rounded-[150px] hover:shadow-[0_8px_24px_silver] hover:transform hover:translate-y-[-2px] duration-200"><FaArrowRightLong /></h2>
+                        <Link to="/catalog/:id" className="text-[15px] text-[#3B3937] flex items-center justify-center bg-[white] w-9 h-9 rounded-[150px] hover:shadow-[0_8px_24px_silver] hover:transform hover:translate-y-[-2px] duration-200"><FaArrowRightLong  /></Link>
                       </div>
                     </div>
                   </div>
