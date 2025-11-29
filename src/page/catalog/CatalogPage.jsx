@@ -35,7 +35,7 @@ const CatalogPage = () => {
             <div className="flex flex-col gap-10">
               <div className="pt-8 flex flex-col items-center gap-10 sm:grid grid-cols-2 lg:flex lg:flex-row">
                 <div className="max-w-[450px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden xl:max-w-[460px] w-full h-[300px]">
-                  <div className="bg-[url('/eshik.jpg')] bg-cover">
+                  <div className="bg-[url('/eshik2.png')] bg-cover">
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Межкомнатные <br /> дверы</h2>
                       <div className="pt-30 pb-8 ">
@@ -77,7 +77,7 @@ const CatalogPage = () => {
                   </div>
                 </div>
                 <div className="max-w-[695px] w-full h-[300px] shadow-xl dark:shadow-white/50 dark:rounded-[10px] overflow-hidden xl:max-w-[710px] w-full h-[300px]">
-                  <div className="bg-[url('/fasad.jpg')] bg-cover">
+                  <div className="bg-[url('/stul.png')] bg-cover">
                     <div className="pt-10 pl-8">
                       <h2 className="text-[25px] text-[#FFFFFF] font-semibold">Лестници</h2>
                       <div className="pt-42 pb-8">
