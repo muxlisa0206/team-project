@@ -12,12 +12,83 @@ import { NavLink } from 'react-router-dom'
 
 // import required modules
 import { EffectFlip, Pagination, Navigation } from 'swiper/modules';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 import './homePage.css'
 
 import footerbg from '../../assets/footerbg.png';
 import image1 from '../../assets/image1.jpg';
 import image2 from '../../assets/image2.png';
+import CatalogInterriorDoors from '../../components/catalogDoors/CatalogInterriorDoors';
+import NeedAHelp from '../../components/needAHelp/NeedAHelp';
+
+const doorInfo = [
+  {
+    id: "1",
+    photos: "/interriorDoorsPhotos/door 1.png",
+    model: "Sofia Original 50.07",
+    price: "24500",
+    discount: "0",
+  },
+  {
+    id: "2",
+    photos: "/interriorDoorsPhotos/door 2.png",
+    model: "VISION Модель 64.43",
+    price: "34500",
+    discount: "10000",
+  },
+  {
+    id: "3",
+    photos: "/interriorDoorsPhotos/door 3.png",
+    model: "VISION Модель 64.44",
+    price: "24500",
+    discount: "0",
+  },
+  {
+    id: "4",
+    photos: "/interriorDoorsPhotos/door 4.png",
+    model: "SKYLINE Модель 55.21",
+    price: "24500",
+    discount: "0",
+  },
+  {
+    id: "5",
+    photos: "/interriorDoorsPhotos/door 5.png",
+    model: "SKYLINE Модель 55.23",
+    price: "24500",
+    discount: "0",
+  },
+  {
+    id: "6",
+    photos: "/interriorDoorsPhotos/door 6.png",
+    model: "VISION Модель 64.44",
+    price: "24500",
+    discount: "0",
+  },
+  {
+    id: "7",
+    photos: "/interriorDoorsPhotos/door 7.png",
+    model: "CLASSIC Модель 65.44",
+    price: "24500",
+    discount: "0",
+  },
+  {
+    id: "8",
+    photos: "/interriorDoorsPhotos/door 8.png",
+    model: "CLASSIC Модель 64.22",
+    price: "24500",
+    discount: "0",
+  },
+  {
+    id: "9",
+    photos: "/interriorDoorsPhotos/door 9.png",
+    model: "METAMORFOSA Модель 65.171",
+    price: "24500",
+    discount: "0",
+  },
+
+]
 
 const HomePage = () => {
   return (
@@ -98,6 +169,69 @@ const HomePage = () => {
               </div>
           </div>
         </section>
+
+        <section>
+              <div className='container mx-auto px-[30px] pt-[50px]'>
+                <h1 className='text-[#3B3937] text-[64px] font-bold'>Витрина товаров</h1>
+              <Tabs className='mt-[20px]'>
+                <TabList className='flex items-center'>
+                  <Tab className='text-[16px] py-[9px] px-[54px] w-full border-1 border-[#DADADA] text-[#3B3937]'>Межкомнатные двери</Tab>
+                  <Tab className='text-[16px] py-[9px] px-[54px] w-full border-1 border-[#DADADA] text-[#3B3937]'>Мебель</Tab>
+                  <Tab className='text-[16px] py-[9px] px-[54px] w-full border-1 border-[#DADADA] text-[#3B3937] whitespace-nowrap'>Стеновые панели «Буазери»</Tab>
+                  <Tab className='text-[16px] py-[9px] px-[54px] w-full border-1 border-[#DADADA] text-[#3B3937]'>Лестницы</Tab>
+                  <Tab className='text-[16px] py-[9px] px-[54px] w-full border-1 border-[#DADADA] text-[#3B3937]'>Мебельные фасады</Tab>
+                </TabList>
+
+                <TabPanel>
+                  <div className='grid grid-cols-3 gap-[30px] py-[20px]'>
+                    {
+                        doorInfo.map((el) => (
+                        <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                        ))
+                    }
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className='grid grid-cols-3 gap-[30px] py-[20px]'>
+                    {
+                  doorInfo.map((el) => (
+                    <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                  ))
+                }
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className='grid grid-cols-3 gap-[30px] py-[20px]'>
+                    {
+                  doorInfo.map((el) => (
+                    <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                  ))
+                }
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className='grid grid-cols-3 gap-[30px] py-[20px]'>
+                    {
+                  doorInfo.map((el) => (
+                    <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                  ))
+                }
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className='grid grid-cols-3 gap-[30px] py-[20px]'>
+                    {
+                  doorInfo.map((el) => (
+                    <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                  ))
+                }
+                  </div>
+                </TabPanel>
+              </Tabs>
+              </div>
+        </section>
+
+        <NeedAHelp/>
       </main>
     </div>
   )

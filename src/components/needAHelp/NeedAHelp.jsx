@@ -4,7 +4,7 @@ function NeedAHelp() {
   return (
     <>
           <section className='py-[60px]'>
-              <div className='container mx-auto flex items-center justify-center'>
+              <div className='container mx-auto px-[30px] flex items-center justify-center'>
                   <div className='md:flex w-full'>
                       <div className='max-w-[700px] w-full h-full'>
                           <img className='w-full object-cover h-[800px]' src="/interriorDoorsPhotos/Rectangle 1716.png" alt="" />

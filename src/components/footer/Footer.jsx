@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom'
 
 function Footer() {
   return (
-    <footer className='mt-[150px]'
+    <footer
     style={{
       backgroundImage: `url(${bg})`,
       backgroundSize: 'cover',
