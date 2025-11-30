@@ -1,15 +1,8 @@
-import React, { useState } from 'react'
 import { FaMoon, FaSun } from 'react-icons/fa6';
 import { Link } from "react-router-dom";
 
 const DastavkaPage = () => {
-  const [dark, setDark] = useState(false)
-  
-  
-    function changeMode() {
-      document.documentElement.classList.toggle("dark")
-      setDark(!dark)
-    }
+
   return (
     <div className='dark:bg-[#3B3937]'>
       <main>
@@ -25,11 +18,7 @@ const DastavkaPage = () => {
             <div className="flex items-center justify-between">
               <h1 className="text-[50px] text-[#3B3937] dark:text-white font-semibold sm:text-[64px]">Доставка и оплата</h1>
               <div className="pt-5 lg:pt-10">
-                <button onClick={changeMode}>
-                  {
-                    dark ? <FaSun className='text-yellow-400 text-[24px]' /> : <FaMoon className='text-[24px]' />
-                  }
-                </button>
+                
               </div>
             </div>
             <div className='pt-9'>
