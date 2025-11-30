@@ -22,7 +22,7 @@ const ContactPage = () => {
               <li>
                 <a className='text-[#B1B0AF] text-[12px] ' href="">Каталог</a>
               </li>
-
+ 
               <li>
                 -
               </li>
@@ -32,7 +32,7 @@ const ContactPage = () => {
               </li>
             </ul>
 
-            <div className="flex text-center justify-center px-5 grid lg:grid-cols-2 items-center gap-5 md:px-40 mt-10">
+            <div className="flex flex-col text-center justify-center px-5 lg:flex lg:flex-row gap-10 mt-10">
 
 
               <div className="max-w-[510px] w-full">
