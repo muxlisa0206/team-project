@@ -20,6 +20,9 @@ import footerbg from '../../assets/footerbg.png';
 import herobg from '../../assets/herobg.png'
 import image1 from '../../assets/image1.png';
 import image2 from '../../assets/image2.png';
+import state1 from '../../assets/state1.svg';
+import state2 from '../../assets/state2.svg';
+import state3 from '../../assets/state3.svg';
 import CatalogInterriorDoors from '../../components/catalogDoors/CatalogInterriorDoors';
 import NeedAHelp from '../../components/needAHelp/NeedAHelp';
 import States from '../../components/states/States';
@@ -390,7 +393,7 @@ const HomePage = () => {
           <div className='container mx-auto px-[30px]'>
             <h1 className='text-[35px] md:text-[64px] text-[#3B3937] font-[700]'>Новые статьи</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px] py-[20px]'>
-                <States img/>
+                <States img={state1} title='Графичный дизайн и бескомпромиссное качество в коллекции перегородок Grafica' desc='В этой коллекции мы создали многообразие дизайна створок и оснастили межкомнатные перегородки безупречным качеством механизмов. Особенность коллекции — плавность скольжения, комфорт и дизайн.'/>
             </div>
           </div>
         </section>
