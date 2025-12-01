@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import CatalogInterriorDoors from './components/catalogDoors/CatalogInterriorDoors';
+import CatalogInterriorDoors from '../../components/catalogDoors/CatalogInterriorDoors';
+import NeedAHelp from '../../components/needAHelp/NeedAHelp';
+import { ImCancelCircle } from "react-icons/im";
 
 const doorInfo = [
   {
@@ -64,7 +66,7 @@ const doorInfo = [
     photos: "/interriorDoorsPhotos/door 9.png",
     model: "METAMORFOSA Модель 65.171",
     price: "24500",
-    discount: "",
+    discount: "0",
   },
 
 ]
@@ -72,11 +74,14 @@ const doorInfo = [
 function CatalogDoorsPage() {
 
   const [isStyleOpen, setIsStyleOpen] = useState(false);
-
+  const [filter, setFilter] = useState(false);
+  function openFilter() {
+    setFilter(!filter);
+  }
   return (
     <>
 
-      <section className='py-[50px]'>
+      <section className='py-[50px] pt-[150px] px-5'>
         <div className='container mx-auto'>
           <ul className='flex items-center gap-5 py-4 text-[12px] text-[#B1B0AF]'>
             <li>
@@ -84,16 +89,281 @@ function CatalogDoorsPage() {
             </li>
             <li className='text-[20px]'>-</li>
             <li>
-              <Link to={"Catalog"}>Каталог</Link>
+              <Link to={"/catalog"}>Каталог</Link>
             </li>
             <li className='text-[20px]'>-</li>
             <li>Межкомнатные двери</li>
           </ul>
 
+
+
+
+
+
+
           <h1 className='text-[64px] text-[#3B3937] font-bold'>Межкомнатные двери</h1>
 
-          <div className='pt-[60px] flex gap-[70px] items-start'>
-            <div className='max-w-[250px] w-full flex flex-col gap-10'>
+          <div className='pt-[60px] lg:flex gap-[70px] items-start'>
+
+            <div className='lg:hidden flex w-full pb-[30px] z-6'>
+              <div className='flex w-full items-center p-5 border border-[#DADADA]'>
+                <h2 className='text-[20px] whitespace-nowrap  font-bold text-[#3B3937]'>Межкомнатные двери</h2>
+              </div>
+              <button onClick={openFilter} className='p-5 border border-[#DADADA] flex items-center cursor-pointer'>
+                <img src="/interriorDoorsPhotos/Vector (3).svg" alt="" />
+              </button>
+
+            </div>
+            <div className={`px-[30px] h-screen ${filter ? "translate-y-0" : "-translate-full"} duration-300 pt-[200px] top-0 left-0 w-full lg:hidden flex flex-col gap-5 fixed bg-[white] z-5`}>
+
+              <div className='flex w-full items-center gap-[30px]'>
+                <button onClick={openFilter}><ImCancelCircle className='w-10 h-10'/></button>
+                <h2 className='text-[24px]'>Фильтровать</h2>
+              </div>
+
+              <ul className='flex w-full flex-col gap-2.5'>
+                <div className='flex items-center justify-between'>
+                  <li className='font-bold '>Ценовой диапазон</li>
+                  <div className='flex items-center justify-end cursor-pointer' onClick={() => setFilter(false)}></div>
+                </div>
+
+                <div className='flex items-center w-full gap-2'>
+                  <div className='flex flex-col'>
+                    <label className='text-[13px]' htmlFor="">Выбрано</label>
+                    <input className=" w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
+                  </div>
+                  <div className='flex flex-col'>
+                    <label className='text-right text-[13px]' htmlFor="">очистить</label>
+                    <input className=" w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
+                  </div>
+                </div>
+                <div className='bg-[#F3F0EE] max-w-[406px] flex justify-center'>
+                  <input className='p-[11px] bg-[black]  w-full ' type="range" />
+                  
+                </div>
+              </ul>
+              <hr />
+              <ul>
+                <li className='font-bold '>Тип дверей</li>
+
+                <div
+                  id="accordion-card-body-1"
+
+                  aria-labelledby="accordion-card-heading-1">
+                  <div className="py-3 flex gap-[25px]">
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Межкомнатные</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Скрытые</label>
+
+                    </span>
+                  </div>
+                </div>
+
+
+              </ul>
+              <hr />
+              <ul>
+                <li className='font-bold '>Стиль</li>
+
+                <div
+                  id="accordion-card-body-2"
+
+                  aria-labelledby="accordion-card-heading-2">
+                  <div className="py-3 flex gap-[25px] flex-wrap">
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Скандинавский</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Винтаж</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Современный</label>
+
+                    </span>
+                  </div>
+                </div>
+
+
+              </ul>
+              <hr />
+              <ul>
+                <li className='font-bold '>Материал</li>
+
+                <div
+                  id="accordion-card-body-3"
+
+                  aria-labelledby="accordion-card-heading-3">
+                  <div className="py-3 flex gap-[25px] flex-wrap">
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Эмаль</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Монохромный Кортекс</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Шёлк</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Кортекс</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Шпон</label>
+
+                    </span>
+                  </div>
+                </div>
+
+
+              </ul>
+              <hr />
+              <ul>
+                <li className='font-bold '>Покрытие</li>
+
+                <div
+                  id="accordion-card-body-4"
+
+                  aria-labelledby="accordion-card-heading-4">
+                  <div className="py-3 flex gap-[25px] flex-wrap">
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Матовые</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Глянцевые</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Под покраску</label>
+
+                    </span>
+                  </div>
+                </div>
+
+
+              </ul>
+              <hr />
+              <ul>
+                <li className='font-bold '>Тип конструкции</li>
+
+                <div
+                  id="accordion-card-body-5"
+
+                  aria-labelledby="accordion-card-heading-5">
+                  <div className="py-3 flex gap-[25px] flex-wrap">
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Рамочные</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Филёнчатые</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Щитовые</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Остеклённые</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Глухие</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Арочные</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Радиусные</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Автоматические</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Противовзломные</label>
+
+                    </span>
+                  </div>
+                </div>
+
+
+              </ul>
+              <hr />
+              <ul>
+                <li className='font-bold '>Облицовки</li>
+
+                <div
+                  id="accordion-card-body-6"
+
+                  aria-labelledby="accordion-card-heading-6">
+                  <div className="py-3 flex gap-[25px] flex-wrap">
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Ваниль</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Белый Клен</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Тополь</label>
+
+                    </span>
+                    <span className='flex items-center justify-between gap-2.5'>
+                      <input className='w-5 h-5 accent-[#3B3937]' type="checkbox" />
+                      <label htmlFor="">Белый матовый</label>
+
+                    </span>
+                  </div>
+                </div>
+
+
+              </ul>
+              <div className='flex items-center justify-between gap-2.5 cursor-pointer' onClick={() => {/* TODO: implement filter reset logic */ }}>
+                <h4 className='text-[#B1B0AF] font-bold'>Сбросить фильтры</h4>
+                <img src="/Vector (2).svg" alt="" />
+              </div>
+            </div>
+
+
+            <div className='max-w-[300px] w-full hidden lg:flex flex-col gap-10'>
               <ul>
                 <li className='font-bold text-[15px] text-[#B14101] pb-[5px]'>Межкомнатные двери</li>
                 <li className='font-bold text-[15px] text-[#3B3937]'>Мебель</li>
@@ -106,11 +376,11 @@ function CatalogDoorsPage() {
                 <div className='flex items-center gap-2'>
                   <div className='flex flex-col'>
                     <label className='text-[13px]' htmlFor="">Выбрано</label>
-                    <input className="max-w-[120px] w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
+                    <input className=" w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
                   </div>
                   <div className='flex flex-col'>
                     <label className='text-right text-[13px]' htmlFor="">очистить</label>
-                    <input className="max-w-[120px] w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
+                    <input className=" w-full h-10 pl-[15px] border-2 border-[#d5d3d1]" type="number" />
                   </div>
                 </div>
                 <div className='bg-[#F3F0EE] flex justify-center'>
@@ -431,14 +701,35 @@ function CatalogDoorsPage() {
               </div>
             </div>
             <div>
-              <div className='grid grid-cols-3 gap-[30px] pb-[70px]'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[30px] pb-[70px]'>
                 {
                   doorInfo.map((el) => (
-                    <CatalogInterriorDoors key={el.id} model={el.model} price={el.price} photos={el.photos} />
+                    <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
                   ))
                 }
 
 
+              </div>
+              <div className='flex items-center justify-center pb-[50px]'>
+                <ul className="flex -space-x-px text-sm gap-5">
+
+                  <li>
+                    <a href="#" className="flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-10 h-10 focus:outline-none">1</a>
+                  </li>
+                  <li>
+                    <a href="#" className="flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-10 h-10 focus:outline-none">2</a>
+                  </li>
+                  <li>
+                    <a href="#" aria-current="page" className="flex items-center justify-center text-fg-brand bg-neutral-tertiary-medium box-border border border-default-medium hover:text-fg-brand font-medium text-sm w-10 h-10 focus:outline-none">3</a>
+                  </li>
+                  <li>
+                    <a href="#" className="flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-10 h-10 focus:outline-none">4</a>
+                  </li>
+                  <li>
+                    <a href="#" className="flex items-center justify-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading font-medium text-sm w-10 h-10 focus:outline-none">5</a>
+                  </li>
+
+                </ul>
               </div>
               <hr className='border-[#c8c7c6]' />
               <div className='pt-[70px]'>
@@ -452,36 +743,13 @@ function CatalogDoorsPage() {
 
           </div>
 
-          
+
 
 
         </div>
       </section >
 
-      <section className='py-[60px]'>
-        <div className='container mx-auto flex items-center justify-center'>
-          <div className='flex w-full full'>
-            <div className='max-w-[700px] w-full'>
-              <img className='w-full h-full' src="/interriorDoorsPhotos/Rectangle 1716.png" alt="" />
-            </div>
-            <div className='bg-[#F3F0EE] w-full p-20 flex flex-col gap-[50px]'>
-              <h1 className='text-[64px] text-[#3B3937] font-bold leading-20'>Нужна помощь с выбором?</h1>
-              <p className='text-[22px] text-[#3B3937]'>Наши специалисты с радостью помогут Вам, оставьте свой номер телефона!</p>
-              <form className='flex flex-col gap-[25px]' action="">
-                <div className='flex gap-5 '>
-                  <div className='w-full'>
-                    <input required className='max-w-80 w-full h-[60px] pl-5 bg-[white]' placeholder='Как вас зовут?' type="text" />
-                  </div>
-                  <div className='w-full'>
-                    <input required className='max-w-80 w-full h-[60px] pl-5 bg-[white]' placeholder='Ваш телефон' type="tel" />
-                  </div>
-                </div>
-                <span><button className='py-5 px-35 bg-[#A9845C] font-bold text-[white] cursor-pointer'>Связаться с нами</button></span>
-              </form>
-            </div>
-          </div>
-          </div>
-      </section>
+      <NeedAHelp />
 
     </>
   )
