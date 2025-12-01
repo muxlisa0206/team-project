@@ -95,13 +95,19 @@ const HomePage = () => {
   return (
     <div>
       <main>
-        <section  className='h-[100vh] m-[20px] mt-[130px]'
+        <section  className='h-[100vh] m-[20px] mt-[130px] bg-[url(herobg.jpg)]'
         style={{
+<<<<<<< HEAD
               backgroundImage: `url(${herobg})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
        >
+=======
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}>
+>>>>>>> 63d468b1a6e75051774adba011c0c06a395a05c0
          <Swiper
         effect={'flip'}
         grabCursor={true}
