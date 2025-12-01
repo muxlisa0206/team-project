@@ -17,7 +17,6 @@ const CatalogPage = () => {
             <div className="flex items-center justify-between">
               <h1 className="text-[50px] text-[#3B3937] dark:text-white font-semibold sm:text-[64px]">Каталог</h1>
               <div className="pt-5 lg:pt-10">
-
               </div>
             </div>
             <div className="flex flex-col gap-10">
