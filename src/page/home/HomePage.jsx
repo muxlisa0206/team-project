@@ -22,6 +22,7 @@ import image1 from '../../assets/image1.png';
 import image2 from '../../assets/image2.png';
 import CatalogInterriorDoors from '../../components/catalogDoors/CatalogInterriorDoors';
 import NeedAHelp from '../../components/needAHelp/NeedAHelp';
+import States from '../../components/states/States';
 
 const doorInfo = [
   {
@@ -215,6 +216,13 @@ const fasadInfo = [
     price: "24500",
     discount: "0",
   },
+  {
+    id: "2",
+    photos: "fasad.jpg",
+    model: "Sofia Original 50.07",
+    price: "24500",
+    discount: "0",
+  }
 ]
 
 const HomePage = () => {
@@ -376,7 +384,16 @@ const HomePage = () => {
               </div>
         </section>
 
-        {/* <NeedAHelp/> */}
+        <NeedAHelp/>
+
+        <section>
+          <div className='container mx-auto px-[30px]'>
+            <h1 className='text-[35px] md:text-[64px] text-[#3B3937] font-[700]'>Новые статьи</h1>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px] py-[20px]'>
+                <States img/>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   )
