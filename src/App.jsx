@@ -6,7 +6,7 @@ import HomePage from './page/home/HomePage';
 import CatalogPage from './page/catalog/CatalogPage';
 import CatalogDoorsPage from './page/catalogDoor/CatalogDoorsPage';
 import SinglePage from './page/single/SinglePage';
-import ContactPage from './page/contact/ContactPage';
+// import ContactPage from './page/contact/ContactPage';
 import StatePage from './page/state/StatePage';
 import Notfound from './page/notfound/Notfound';
 import DastavkaPage from './page/dastavka/DastavkaPage';

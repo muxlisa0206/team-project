@@ -46,7 +46,7 @@ function Header() {
       </div>
     </header>
 
-    <div className={`${menu ? "translate-y-0" : "translate-y-[-100%]"} fixed z-33 h-[40vh] top-[90px] w-full duration-500`}
+    <div className={`${menu ? "translate-y-0" : "translate-y-[-200%]"} fixed z-33 h-[40vh] top-[90px] w-full duration-500`}
     style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: 'cover',
