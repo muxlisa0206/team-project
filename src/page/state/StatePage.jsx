@@ -5,5 +5,3 @@ function StatePage() {
     <div>StatePage</div>
   )
 }
-
-export default StatePage
