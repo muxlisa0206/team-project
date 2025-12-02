@@ -2,7 +2,7 @@ import React from 'react'
 
 function StatePage() {
   return (
-    <div>StatePage</div>
+    <div>state</div>
   )
 }
 

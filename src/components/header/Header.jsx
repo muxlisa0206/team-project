@@ -46,13 +46,13 @@ function Header() {
       </div>
     </header>
 
-    <div className={`${menu ? "translate-y-0" : "translate-y-[-100%]"} fixed top-[90px] w-full duration-500`}
+    <div className={`${menu ? "translate-y-0" : "translate-y-[-100%]"} fixed z-33 h-[40vh] top-[90px] w-full duration-500`}
     style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}>
-    <div className='flex flex-col gap-[20px] w-full py-[50px] bg-black/60'>
+    <div className='flex flex-col gap-[20px] w-full h-full py-[50px] bg-black/60'>
     <ul className='flex flex-col items-center gap-[20px]'>
             <li>
               <NavLink className='text-white text-[25px] font-normal' to="Contact">Contact</NavLink>

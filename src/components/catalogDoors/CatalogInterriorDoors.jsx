@@ -17,14 +17,16 @@ export default function CatalogInterriorDoors({ id, model, price, photos }) {
                 <h3 className='text-[18px]'>{model}</h3>
                 <p className='text-[18px] font-bold'>{price}</p>
 
-                <Swiper pagination={true} modules={[Pagination]} className="mySwiper h-72 flex justify-center">
+                <Link to={"/CatalogDoors/Single"}>
+                    <Swiper pagination={true} modules={[Pagination]} className="mySwiper h-72 flex justify-center">
 
-                    <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
-                    <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
-                    <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
-                    <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
+                        <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
+                        <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
+                        <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
+                        <SwiperSlide><div className='flex justify-center'><img src={photos} alt="" /></div></SwiperSlide>
 
-                </Swiper>
+                    </Swiper>
+                </Link>
 
                 <Link to={`/CatalogDoors/${id}`} className='flex p-2 justify-end font-bold text-[#B14101]'>КУПИТЬ</Link>
 
