@@ -6,7 +6,7 @@ import HomePage from './page/home/HomePage';
 import CatalogPage from './page/catalog/CatalogPage';
 import CatalogDoorsPage from './page/catalogDoor/CatalogDoorsPage';
 import SinglePage from './page/single/SinglePage';
-import ContactPage from './page/contact/ContactPage';
+// import ContactPage from './page/contact/ContactPage';
 import StatePage from './page/state/StatePage';
 import Notfound from './page/notfound/Notfound';
 import DastavkaPage from './page/dastavka/DastavkaPage';
@@ -18,9 +18,9 @@ function App() {
         <Route element={<Layout/>}>
           <Route index element={<HomePage/>}/>
           <Route path='Catalog' element={<CatalogPage/>}/>
-          <Route path='/Catalog/CatalogDoors' element={<CatalogDoorsPage/>}/>
-          <Route path='/CatalogDoors/Single' element={<SinglePage/>}/>
-          <Route path='Contact' element={<ContactPage/>}/>
+          <Route path='/Catalog/:id' element={<CatalogDoorsPage/>}/>
+          <Route path='/CatalogDoors/:Single' element={<SinglePage/>}/>
+          {/* <Route path='Contact' element={<ContactPage/>}/> */}
           <Route path='State' element={<StatePage/>}/>
           <Route path='Dastavka' element={<DastavkaPage/>}/>
         </Route>

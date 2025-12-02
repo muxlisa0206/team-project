@@ -1,9 +1,205 @@
-import React from 'react'
+// import { Circle, GeolocationControl, Map, Placemark, TrafficControl, TypeSelector, YMaps, ZoomControl } from '@pbe/react-yandex-maps'
+// import React from 'react'
 
-const ContactPage = () => {
-  return (
-    <div>ContactPage</div>
-  )
-}
+// const ContactPage = () => {
 
-export default ContactPage
+  
+//   return (
+
+    
+//     <>
+//       <main className='pt-30 '>
+//         <section>
+//           <div className="container mx-auto">
+//             <ul className='flex  gap-5 px-2 md:pl-40'>
+//               <li>
+//                 <a className='text-[#B1B0AF] text-[12px] ' href="/">Главная</a>
+//               </li>
+
+//               <li>
+//                 -
+//               </li>
+
+//               <li>
+//                 <a className='text-[#B1B0AF] text-[12px] ' href="">Каталог</a>
+//               </li>
+ 
+//               <li>
+//                 -
+//               </li>
+
+//               <li>
+//                 <a className='text-[#B1B0AF] text-[12px] ' href="">Межкомнатные двери</a>
+//               </li>
+//             </ul>
+
+//             <div className="flex flex-col text-center justify-center px-5 lg:flex lg:flex-row gap-10 mt-10">
+
+
+//               <div className="max-w-[510px] w-full">
+//                 <h1 className='text-[#3B3937] text-6xl font-bold pl-5 '>
+//                   Контакты
+//                 </h1>
+
+//                 <div className=" bg-[#F3F0EE] p-16 mt-8 max-w-[510px] w-full">
+//                   <p className=' text-[13px]'>
+//                     Адрес:
+//                   </p>
+//                   <h3 className='text-[#3B3937] text-[18px] font-medium '>
+//                     м. Полежаевская
+//                   </h3>
+
+//                   <h2 className='text-[#3B3937] text-[18px] font-medium '>
+//                     123154, г. Москва, пр-т. Маршала Жукова, <br />
+//                     д. 52, "Мебельный Центр"
+//                   </h2>
+//                   <br />
+
+//                   <p className=' text-[13px] text-[#3B3937]'>
+//                     Режим работы:
+//                   </p>
+//                   <h2 className='text-[#3B3937] text-[18px] font-medium'>
+//                     ВТ - СБ 10:00 - 19:00    ВС, ПН - Выходные
+//                   </h2>
+//                   <br />
+
+
+//                   <p className=' text-[13px]'>
+//                     Телефон
+//                   </p>
+//                   <h1 className='text-[#B14101] font-bold  '>
+//                     8 (900) 000-00-00
+//                     <span className='mx-3'></span>
+//                     8 (900) 000-00-00
+//                   </h1> 
+//                   <br />
+
+//                   <p className=' text-[13px] text-[#3B3937]'>
+//                     Почта и социальные сети
+//                   </p>
+
+//                   <h1 className='text-[#B14101] font-bold  '>
+//                     support@sofiadoors.com
+//                   </h1>
+
+
+
+//                   <div className="flex items-center mt-9">
+//                     <img className="z-30 -ml-0" src="contactImg/contact-wk.png" alt="" />
+//                     <img className="z-20 -ml-2" src="contactImg/contact-p.png" alt="" />
+//                     <img className="z-10 -ml-2" src="contactImg/contact-tg.png" alt="" />
+//                   </div>
+
+
+
+//                 </div>
+//               </div>
+
+
+//               <div id='map' className="w-full max-w-[730px] map">
+
+
+//                 <YMaps>
+//                   <Map className='w-full h-full' defaultState={{ center: [41.2646, 69.2163], zoom: 15 }}>
+//                     <Placemark
+//                       geometry={[41.2646, 69.2163]}
+//                       options={{
+//                         iconLayout: "default#image",
+//                         iconImageHref: "/contactImg/location-icon.png", 
+//                         iconImageSize: [40, 40], 
+//                         iconImageOffset: [-20, -20], 
+//                       }}
+//                     />
+
+
+//                     <TrafficControl options={{ float: "right" }} />
+//                     <TypeSelector options={{ float: "right" }} />
+
+
+//                     <ZoomControl options={{ float: "right", position: {
+//                       left: 10,
+//                     top:200
+//                     } }} />
+
+//                     <Circle
+//                       geometry={[[41.2646, 69.2163], 100]}
+//                       options={{
+//                         draggable: true,
+//                         fillColor: "rgba(139, 69, 19, 0.25)",   
+//                         strokeColor: "#8B4513",                
+//                         strokeOpacity: 0.9,
+//                         strokeWidth: 4,
+//                         strokeStyle: "solid",
+//                       }}
+//                     />
+
+
+//                     <GeolocationControl options={{ float: "left" }} />
+
+
+
+//                   </Map>
+
+
+                  
+//                 </YMaps>
+//                 </div>
+
+
+                
+             
+
+//             </div>
+//           </div>
+//         </section>
+//         <section className='bg-[#F3F0EE] mt-20 py-[90px] pt-10'>
+//           <div className="container flex items-center justify-center px-5 mx-auto grid md:grid-cols-2 items-center ">
+            
+//             <div className="p-10">
+//               <h1 className='text-[#3B3937] text-5xl md:text-6xl font-bold'>
+//                 Связаться <br />
+//                  с нами
+//               </h1>
+
+//               <p className='text-[#3B3937] text-[19px] md:text-2xl font-medium mt-6'>
+//                 Наши специалисты с радостью <br />
+//                  помогут Вам, оставьте свой <br />
+//                   номер телефона!
+//               </p>
+//             </div>
+
+
+//             <div className="px-5 ">
+//               <div className="flex gap-5">
+//                 <input className='p-5 max-w-[290px] w-full    bg-white outline-none' type="text" placeholder='Как вас зовут?' />
+//                 <input className='p-5 max-w-[290px] w-full   bg-white outline-none' type="tel" placeholder='Ваш телефон' />
+
+
+//               </div>
+//               <div className="mt-5">
+//                 <textarea
+//                   className="p-5 bg-white outline-none max-w-[600px] w-full h-[160px] resize-none"
+//                   placeholder="Ваш комментарий"
+//                 />
+//               </div>
+
+//               <button className='bg-[#A9845C] p-4 rounded-[5px] mt-[40px] text-white cursor-pointer'>
+//                 отправить сообщение
+//               </button>
+//             </div>
+
+
+//           </div>
+//         </section>
+//       </main>
+
+
+      
+//     </>
+//   )
+// }
+
+
+
+
+// export default ContactPage
