@@ -30,6 +30,9 @@ function Header() {
             <li>
               <NavLink className='text-white text-[16px] font-normal' to="Dastavka">Dastavka</NavLink>
             </li>
+            <li>
+              <NavLink className='text-white text-[16px] font-normal' to="News">News</NavLink>
+            </li>
         </ul>
         <div className='hidden lg:flex items-center justify-between gap-[50px]'>
         <p className='text-[#FFD6A8] text-[16px] font-[400px]'>
@@ -62,6 +65,9 @@ function Header() {
             </li>
             <li>
               <NavLink className='text-white text-[25px] font-normal' to="Dastavka">Dastavka</NavLink>
+            </li>
+            <li>
+              <NavLink className='text-white text-[25px] font-normal' to="News">News</NavLink>
             </li>
         </ul>
         <div className='flex items-center flex-col gap-[20px]'>

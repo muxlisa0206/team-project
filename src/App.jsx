@@ -10,6 +10,7 @@ import SinglePage from './page/single/SinglePage';
 import StatePage from './page/state/StatePage';
 import Notfound from './page/notfound/Notfound';
 import DastavkaPage from './page/dastavka/DastavkaPage';
+import News from './page/news/News';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           {/* <Route path='Contact' element={<ContactPage/>}/> */}
           <Route path='State' element={<StatePage/>}/>
           <Route path='Dastavka' element={<DastavkaPage/>}/>
+          <Route path='News' element={<News/>}/>
         </Route>
         <Route path='*' element={<Notfound/>}/>
       </Routes>
