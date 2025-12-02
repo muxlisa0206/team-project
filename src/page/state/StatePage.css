@@ -1,0 +1,169 @@
+.custom-swiper {
+    position: relative;
+}
+
+.custom-swiper img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 !important;
+    display: block;
+}
+
+.custom-pagination {
+    position: absolute !important;
+    bottom: 30px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.custom-pagination span {
+    width: 8px !important;
+    height: 8px !important;
+    background: rgba(255, 255, 255, 0.6) !important;
+    border-radius: 50%;
+    opacity: 1 !important;
+    margin: 0 4px !important;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    background: #ffffff !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.slide-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 20px;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-prev {
+    right: 80px;
+}
+
+.custom-next {
+    right: 20px;
+}
+
+.testimonial-card {
+    width: 100%;
+    max-width: 1060px;
+    height: 420px;
+    border: 2px solid #B1B0AF;
+    background: #ffffff;
+    padding: 40px 50px;
+    position: relative;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.01);
+}
+
+.testimonial-text {
+    font-family: "PermianSerifTypeface", serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #C6551A;
+    max-width: 900px;
+}
+
+.testimonial-bottom-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(59, 57, 55, 0.5);
+}
+
+.avatar-section {
+    position: absolute;
+    left: 50px;
+    bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar-img {
+    width: 54px;
+    height: 54px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.avatar-name {
+    font-family: "PermianSerifTypeface", serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    color: #3B3937;
+}
+
+.avatar-role {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    color: #B1B0AF;
+}
+
+.quote-icon {
+    position: absolute;
+    right: 50px;
+    bottom: 60px;
+    width: 52px;
+    height: 36px;
+    object-fit: contain;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        height: auto;
+        padding: 24px;
+    }
+
+    .testimonial-text {
+        font-size: 22px;
+    }
+
+    .avatar-section {
+        left: 20px;
+        bottom: 30px;
+    }
+
+    .avatar-name {
+        font-size: 18px;
+    }
+
+    .avatar-role {
+        font-size: 12px;
+    }
+
+    .quote-icon {
+        right: 20px;
+        bottom: 30px;
+        width: 40px;
+        height: 28px;
+    }
+}
