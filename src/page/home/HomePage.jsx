@@ -235,7 +235,7 @@ const HomePage = () => {
   return (
     <div>
       <main>
-        <section  className='h-[45vh] md:h-[70vh] lg:h-[100vh] m-[20px] mt-[130px]'
+        <section  className='pt-[80px] pb-10 sm:pb-20 md:pt-[130px]'
         style={{
               backgroundImage: `url(${herobg})`,
               backgroundSize: 'cover',
@@ -253,7 +253,7 @@ const HomePage = () => {
         className="mySwiper"
       >
         <SwiperSlide className='flex items-center justify-center'>
-              <div className='container mx-auto px-[30px] flex flex-col gap-[10px] items-center justify-center max-w-[300px] md:max-w-[540px] w-full h-[300px] md:h-[540px] rounded-[50%] mt-[50px] lg:mt-[30px] opacity-60' 
+              <div className='container mx-auto px-[10px] flex flex-col gap-[10px] items-center justify-center max-w-[300px] md:max-w-[540px] w-full h-[300px] md:h-[540px] rounded-[50%] mt-[50px] lg:mt-[30px] opacity-60' 
               style={{
                 backgroundImage: `url(${footerbg})`,
                 backgroundSize: 'cover',
@@ -267,7 +267,7 @@ const HomePage = () => {
             </div>
             </SwiperSlide>
             <SwiperSlide className='flex items-center justify-center'>
-              <div className='container mx-auto px-[30px] flex flex-col gap-[10px] items-center justify-center max-w-[300px] md:max-w-[540px] w-full h-[300px] md:h-[540px] rounded-[50%] mt-[50px] lg:mt-[30px] opacity-60' 
+              <div className='container mx-auto px-[10px] flex flex-col gap-[10px] items-center justify-center max-w-[300px] md:max-w-[540px] w-full h-[300px] md:h-[540px] rounded-[50%] mt-[50px] lg:mt-[30px] opacity-60' 
               style={{
                 backgroundImage: `url(${footerbg})`,
                 backgroundSize: 'cover',
@@ -281,7 +281,7 @@ const HomePage = () => {
             </div>
             </SwiperSlide>
             <SwiperSlide className='flex items-center justify-center'>
-              <div className='container mx-auto px-[30px] flex flex-col gap-[10px] items-center justify-center max-w-[300px] md:max-w-[540px] w-full h-[300px] md:h-[540px] rounded-[50%] mt-[50px] lg:mt-[30px] opacity-30' 
+              <div className='container mx-auto px-[10px] flex flex-col gap-[10px] items-center justify-center max-w-[300px] md:max-w-[540px] w-full h-[300px] md:h-[540px] rounded-[50%] mt-[50px] lg:mt-[30px] opacity-30' 
               style={{
                 backgroundImage: `url(${footerbg})`,
                 backgroundSize: 'cover',
@@ -298,7 +298,7 @@ const HomePage = () => {
         </section>
 
         <section>
-          <div className='container mx-auto px-[30px] pt-[40px] flex flex-col gap-3 lg:flex-row items-center justify-between gap-[20px]'>
+          <div className='container mx-auto px-[10px] pt-[40px] flex flex-col gap-3 lg:flex-row items-center justify-between gap-[20px]'>
               <div className='max-w-[700px] w-full border-b-1 border-[#DADADA]'>
                 <img className='w-full h-[320px] object-cover' src={image1} alt="" />
                 <div className='py-[20px] flex flex-col gap-[20px]'>
@@ -319,30 +319,30 @@ const HomePage = () => {
         </section>
 
         <section>
-              <div className='container mx-auto px-[30px] pt-[50px]'>
-                <h1 className='text-[#3B3937] text-[64px] font-bold'>Витрина товаров</h1>
+              <div className='container mx-auto px-[10px] pt-[50px]'>
+                <h1 className='text-[#3B3937] text-[34px] sm:text-[44px] md:text-[54px] lg:text-[64px] font-bold'>Витрина товаров</h1>
               <Tabs className='mt-[20px]'>
-              <TabList className='flex items-center overflow-x-auto min-w-full whitespace-nowrap no-scrollbar'>
-                <Tab className='flex-1 text-[16px] py-[9px] px-[20px] border border-[#DADADA] text-[#3B3937]'>
+              <TabList className='flex items-center justify-between gap-2 overflow-x-auto min-w-full whitespace-nowrap no-scrollbar'>
+                <Tab className='flex rounded cursor-pointer w-full items-center justify-centertems-center justify-center text-[16px] py-[9px] px-[20px] border border-[#DADADA] text-[#3B3937]'>
                   Межкомнатные двери
                 </Tab>
-                <Tab className='flex-1 text-[16px] py-[9px] px-[20px] border border-[#DADADA] text-[#3B3937]'>
+                <Tab className='flex rounded cursor-pointer w-full items-center justify-center text-[16px] py-[9px] px-[20px] border border-[#DADADA] text-[#3B3937]'>
                   Мебель
                 </Tab>
-                <Tab className='flex-1 text-[16px] py-[9px] px-[20px] border border-[#DADADA] text-[#3B3937] whitespace-nowrap'>
+                <Tab className='flex rounded cursor-pointer w-full items-center justify-center text-[16px] py-[9px] px-[20px] border border-[#DADADA] text-[#3B3937] whitespace-nowrap'>
                   Стеновые панели «Буазери»
                 </Tab>
-                <Tab className='flex-1 text-[16px] py-[9px] px-[20px] border border-[#DADADA] text-[#3B3937]'>
+                <Tab className='flex rounded cursor-pointer w-full items-center justify-center text-[16px] py-[9px] px-[20px] border border-[#DADADA] text-[#3B3937]'>
                   Лестницы
                 </Tab>
-                <Tab className='flex-1 text-[16px] py-[9px] px-[20px] border border-[#DADADA] text-[#3B3937]'>
+                <Tab className='flex rounded cursor-pointer w-full items-center justify-center text-[16px] py-[9px] px-[20px] border border-[#DADADA] text-[#3B3937]'>
                   Мебельные фасады
                 </Tab>
               </TabList>
 
 
                 <TabPanel>
-                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px] py-[20px]'>
+                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg::grid-cols-4 gap-3 py-[20px]'>
                     {
                         doorInfo.map((el) => (
                         <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
@@ -351,7 +351,7 @@ const HomePage = () => {
                   </div>
                 </TabPanel>
                 <TabPanel>
-                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px] py-[20px]'>
+                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 py-[20px]'>
                     {
                     mebelInfo.map((el) => (
                     <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
@@ -360,7 +360,7 @@ const HomePage = () => {
                   </div>
                 </TabPanel>
                 <TabPanel>
-                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px] py-[20px]'>
+                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 py-[20px]'>
                     {
                   devorInfo.map((el) => (
                     <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
@@ -369,7 +369,7 @@ const HomePage = () => {
                   </div>
                 </TabPanel>
                 <TabPanel>
-                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px] py-[20px]'>
+                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 py-[20px]'>
                     {
                   stairInfo.map((el) => (
                     <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
@@ -393,7 +393,7 @@ const HomePage = () => {
         <NeedAHelp/>
 
         <section>
-          <div className='container mx-auto px-[30px]'>
+          <div className='container mx-auto px-[10px]'>
             <h1 className='text-[35px] md:text-[64px] text-[#3B3937] font-[700]'>Новые статьи</h1>
             <div className='flex flex-col gap-3 items-center sm:grid grid-cols-2 lg:grid-cols-3 gap-[30px] py-[20px]'>
                 <States img={state1} title='Графичный дизайн и бескомпромиссное качество в коллекции перегородок Grafica' desc='В этой коллекции мы создали многообразие дизайна створок и оснастили межкомнатные перегородки безупречным качеством механизмов. Особенность коллекции — плавность скольжения, комфорт и дизайн.'/>
