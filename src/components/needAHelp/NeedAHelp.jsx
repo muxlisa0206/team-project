@@ -4,7 +4,7 @@ function NeedAHelp() {
   return (
     <>
           <section className='py-[60px]'>
-              <div className='container mx-auto px-[30px] flex items-center justify-center'>
+              <div className='container mx-auto px-[10px] flex items-center justify-center'>
                   <div className='flex flex-col lg:flex-row w-full'>
                       <div className='max-w-[700px] w-full h-full'>
                           <img className='w-full object-cover h-[300px] sm:h-[500px] lg:h-[800px]' src="/interriorDoorsPhotos/Rectangle 1716.png" alt="" />
@@ -15,13 +15,13 @@ function NeedAHelp() {
                           <form className='flex flex-col gap-[25px]' action="">
                               <div className='flex flex-col gap-2 lg:flex-row gap-5 '>
                                   <div className='w-full'>
-                                      <input required className='w-full h-[60px] pl-5 bg-[white]' placeholder='Как вас зовут?' type="text" />
+                                      <input required className='w-full outline-none rounded h-[60px] pl-5 bg-[white]' placeholder='Как вас зовут?' type="text" />
                                   </div>
                                   <div className='w-full'>
-                                      <input required className='w-full h-[60px] pl-5 bg-[white]' placeholder='Ваш телефон' type="tel" />
+                                      <input required className='w-full outline-none rounded h-[60px] pl-5 bg-[white]' placeholder='Ваш телефон' type="tel" />
                                   </div>
                               </div>
-                              <span><button className='py-5 px-[20px] w-full sm:px-35 bg-[#A9845C] font-bold text-[white] whitespace-nowrap cursor-pointer'>Связаться с нами</button></span>
+                              <span><button className='py-5 px-[20px] rounded w-full sm:px-35 bg-[#A9845C] font-bold text-[white] whitespace-nowrap cursor-pointer'>Связаться с нами</button></span>
                           </form>
                       </div>
                   </div>

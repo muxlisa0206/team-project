@@ -9,7 +9,7 @@ const CatalogPage = () => {
       <main>
         <section>
           <div className="container mx-auto px-3 pl-10 pr-7">
-            <div className='pt-30 sm:pt-36 md:pt-40 lg:pt-45  lg:pt-35 flex gap-5'>
+            <div className='pt-30 sm:pt-36 md:pt-40 lg:pt-35  lg:flex gap-5'>
               <Link className='text-[13px] sm:text-[15px] text-[#B1B0AF]' to="/">Главная</Link>
               <p className='text-[15px] text-[#B1B0AF]'>-</p>
               <Link className='text-[13px] sm:text-[15px] text-[#B1B0AF]' to="/catalog">Каталог</Link>

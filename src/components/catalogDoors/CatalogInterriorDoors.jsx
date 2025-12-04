@@ -13,9 +13,9 @@ import { Link } from 'react-router-dom';
 export default function CatalogInterriorDoors({ id, model, price, photos }) {
     return (
         <>
-            <div className='p-5 border border-[#DADADA]'>
+            <div className='p-5 border border-[#DADADA] rounded'>
                 <h3 className='text-[18px]'>{model}</h3>
-                <p className='text-[18px] font-bold'>{price}</p>
+                <p className='text-[18px] font-bold pb-2'>{price}</p>
 
                 <Link to={"/CatalogDoors/Single"}>
                     <Swiper pagination={true} modules={[Pagination]} className="mySwiper h-72 flex justify-center">

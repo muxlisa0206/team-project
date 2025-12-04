@@ -15,7 +15,7 @@ function Footer() {
       backgroundPosition: 'center',
     }}>
       <div className=' bg-black/50'>
-        <div className='container mx-auto px-[30px] py-[50px] flex flex-col items-center text-center sm:text-left sm:flex-row flex-wrap justify-between gap-[50px]'>
+        <div className='container mx-auto px-[10px] py-[50px] flex flex-col items-center text-center sm:text-left sm:flex-row flex-wrap justify-between gap-[50px]'>
           <div className='flex flex-col gap-[15px]'>
             <NavLink to="/"><img src={logo} alt="" /></NavLink>
             <div className='flex flex-col gap-[8px]'>
