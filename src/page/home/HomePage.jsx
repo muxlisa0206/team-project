@@ -342,7 +342,7 @@ const HomePage = () => {
 
 
                 <TabPanel>
-                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg::grid-cols-4 gap-3 py-[20px]'>
+                  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 py-[20px]'>
                     {
                         doorInfo.map((el) => (
                         <CatalogInterriorDoors key={el.id} id={el.id} model={el.model} price={el.price} photos={el.photos} />
