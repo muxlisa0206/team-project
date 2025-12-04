@@ -42,6 +42,7 @@ function Footer() {
               <div className='flex flex-col gap-[15px]'>
                 <NavLink to='Dastavka' className='text-white text-[13px] font-[400]'>Dastavka</NavLink>
                 <NavLink to='State' className='text-white text-[13px] font-[400]'>State</NavLink>
+                <NavLink to='News' className='text-white text-[13px] font-[400]'>News</NavLink>
                 <NavLink to='Contact' className='text-white text-[13px] font-[400]'>Contact</NavLink>
                 <p className='text-white text-[13px] font-[400]'>Политика конфиденциальности</p>
               </div>
