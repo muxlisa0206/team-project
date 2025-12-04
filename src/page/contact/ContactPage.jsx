@@ -111,36 +111,7 @@
 //                       }}
 //                     />
 
-
-//                     <TrafficControl options={{ float: "right" }} />
-//                     <TypeSelector options={{ float: "right" }} />
-
-
-//                     <ZoomControl options={{ float: "right", position: {
-//                       left: 10,
-//                     top:200
-//                     } }} />
-
-//                     <Circle
-//                       geometry={[[41.2646, 69.2163], 100]}
-//                       options={{
-//                         draggable: true,
-//                         fillColor: "rgba(139, 69, 19, 0.25)",   
-//                         strokeColor: "#8B4513",                
-//                         strokeOpacity: 0.9,
-//                         strokeWidth: 4,
-//                         strokeStyle: "solid",
-//                       }}
-//                     />
-
-
-//                     <GeolocationControl options={{ float: "left" }} />
-
-
-
-//                   </Map>
-
-
+                  </Map>
                   
 //                 </YMaps>
 //                 </div>
