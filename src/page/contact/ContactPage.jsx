@@ -110,10 +110,8 @@ const ContactPage = () => {
                         iconImageOffset: [-20, -20], 
                       }}
                     />
-                    
+
                   </Map>
-
-
                   
                 </YMaps>
                 </div>
